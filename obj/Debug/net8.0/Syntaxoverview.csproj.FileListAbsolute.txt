@@ -12,3 +12,4 @@ C:\Users\Sironet\Syntaxoverview\obj\Debug\net8.0\refint\Syntaxoverview.dll
 C:\Users\Sironet\Syntaxoverview\obj\Debug\net8.0\Syntaxoverview.pdb
 C:\Users\Sironet\Syntaxoverview\obj\Debug\net8.0\Syntaxoverview.genruntimeconfig.cache
 C:\Users\Sironet\Syntaxoverview\obj\Debug\net8.0\ref\Syntaxoverview.dll
+C:\Users\Sironet\Syntaxoverview\obj\Debug\net8.0\Syntaxoverview.sourcelink.json
