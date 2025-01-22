@@ -36,6 +36,19 @@ class Program
                 Console.WriteLine("\nChecking if inputed number lies within the 10 and 100:");
                 NumberRange.Checknumberrange(new string[] { }); 
                 break;
+                  case "checkage":
+                Console.WriteLine("\nChecking if inputed number lies within the 10 and 100:");
+                Checkage.Checkvotingage(new string[] { }); 
+                break;
+                case "operations":
+                Console.WriteLine("\nassignment operations:");
+                 Assignment.Operationassignment(new string[] { }); 
+                break;
+
+                case "swapp":
+                Console.WriteLine("\nassignment operations:");
+                 Swapp.Swapnumbers(new string[] { }); 
+                break;
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
                 Console.WriteLine("Usage: dotnet run <simplecalc | syntax | Comparisonoperators>");
@@ -43,4 +56,3 @@ class Program
         }
     }
 }
- 
