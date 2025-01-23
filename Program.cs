@@ -4,6 +4,7 @@ using operations;
 using Comparisonoperators;
 using ControlFlow;
 using Method;
+using Methods;
 class Program
 {
     static void Main(string[] args)
@@ -79,13 +80,25 @@ class Program
                 Add.Sum(new string[] { }); 
                 break;
                 case "methodstring":
-                Console.WriteLine("\nusing main method to call length of a string                ");
+                Console.WriteLine("\nusing main method to call length of a string");
                 Getlength.Mainlength(new string [] { });
                 break;
+                case "methodoverloading":
+                Console.WriteLine("\nusing  method overloading");
+                Summint.Mainadd(new string [] { });
+                break;
+
+                case "area":
+                Console.WriteLine("\nusing  method overloading to get area of shapes");
+                ShapesArea.Mainarea(new string [] { });
+                break;
+
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
                 Console.WriteLine("Usage: dotnet run <simplecalc | syntax | Comparisonoperators>");
                 break;
         }
     }
+
+
 }

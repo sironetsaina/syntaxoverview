@@ -50,7 +50,6 @@ public class Getlength
 
         if (!string.IsNullOrEmpty(userInput))
         {
-            // Call StringLength method with user input
             int length = StringLength(userInput);
             Console.WriteLine($"The length of the string \"{userInput}\" is: {length}");
         }
@@ -59,7 +58,6 @@ public class Getlength
             Console.WriteLine("You entered an empty or null string.");
         }
 
-        // Handle command-line arguments
         if (args.Length > 0)
         {
             string firstArg = args[0];
