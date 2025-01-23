@@ -65,6 +65,14 @@ class Program
                 Console.WriteLine("\nFind Month:");
                 Switchmonth.Month(new string[] { }); 
                 break;
+                 case "loops":
+                Console.WriteLine("\nDisplay fizzbuzz:");
+                Loops.Loopno(new string[] { }); 
+                break;
+                case "fibonacci":
+                Console.WriteLine("\nThe fibonacci sequence");
+                Fibonacci.Sequence(new string[] { }); 
+                break;
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
                 Console.WriteLine("Usage: dotnet run <simplecalc | syntax | Comparisonoperators>");
