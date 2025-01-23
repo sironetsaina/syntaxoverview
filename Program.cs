@@ -2,7 +2,7 @@
 using syntax; 
 using operations;
 using Comparisonoperators;
-
+using ControlFlow;
 class Program
 {
     static void Main(string[] args)
@@ -48,6 +48,22 @@ class Program
                 case "swapp":
                 Console.WriteLine("\nassignment operations:");
                  Swapp.Swapnumbers(new string[] { }); 
+                break;
+                 case "ifstatements":
+                Console.WriteLine("\nfind value of the no:");
+                Ifstatement.Ifelse(new string[] { }); 
+                break;
+                  case "ifstatement":
+                Console.WriteLine("\ncheck leap year:");
+                Leapyear.Leap(new string[] { }); 
+                break;
+                 case "switchstatement":
+                Console.WriteLine("\nFind Day of the week:");
+                Switch.Days(new string[] { }); 
+                break;
+                 case "switchstatements":
+                Console.WriteLine("\nFind Month:");
+                Switchmonth.Month(new string[] { }); 
                 break;
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
