@@ -3,6 +3,7 @@ using syntax;
 using operations;
 using Comparisonoperators;
 using ControlFlow;
+using Method;
 class Program
 {
     static void Main(string[] args)
@@ -72,6 +73,14 @@ class Program
                 case "fibonacci":
                 Console.WriteLine("\nThe fibonacci sequence");
                 Fibonacci.Sequence(new string[] { }); 
+                break;
+                case "method":
+                Console.WriteLine("\nusing main method to call results");
+                Add.Sum(new string[] { }); 
+                break;
+                case "methodstring":
+                Console.WriteLine("\nusing main method to call length of a string                ");
+                Getlength.Mainlength(new string [] { });
                 break;
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
