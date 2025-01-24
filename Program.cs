@@ -6,6 +6,7 @@ using ControlFlow;
 using Method;
 using Methods;
 using Methods.FactorialCalculator;
+using ObjectOrientedProgramming;
 class Program
 {
     static void Main(string[] args)
@@ -109,6 +110,15 @@ class Program
                 case "factor":
                 Console.WriteLine("\n Get factorial");
                 Factorialcalc.Mainfactor(new string []{});
+                break;
+                  case "cars":
+                Console.WriteLine("\nlist of car specifics ");
+               Cardetails.Maindetails(new string []{});
+                break;
+
+                case "persondetails":
+                Console.WriteLine("\nlists persons details");
+                Persondetails.Mainpersona(new string []{});
                 break;
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
