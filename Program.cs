@@ -5,6 +5,7 @@ using Comparisonoperators;
 using ControlFlow;
 using Method;
 using Methods;
+using Methods.FactorialCalculator;
 class Program
 {
     static void Main(string[] args)
@@ -93,6 +94,22 @@ class Program
                 ShapesArea.Mainarea(new string [] { });
                 break;
 
+                 case "string":
+                Console.WriteLine("\nstring parameters");
+                StringRepeater.Mainstring(new string [] { });
+                break;
+                case "recarea":
+                Console.WriteLine("\nRectangle area");
+                Recarea.Mainarea(new string [] { });
+                break;
+                case "message":
+                Console.WriteLine("\nmessage from the method");
+                Message.Mainmessage(new string [] { });
+                break;
+                case "factor":
+                Console.WriteLine("\n Get factorial");
+                Factorialcalc.Mainfactor(new string []{});
+                break;
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
                 Console.WriteLine("Usage: dotnet run <simplecalc | syntax | Comparisonoperators>");
