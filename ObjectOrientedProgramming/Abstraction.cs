@@ -42,16 +42,24 @@ namespace ObjectOrientedProgramming
             }
         }
     }
-    public class Person
+   public class Person
     {
+        // Properties for Name and Age
         public string Name { get; set; }
         public int Age { get; set; }
+
+        // Constructor to initialize Name and Age
         public Person(string name, int age)
         {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentException("Name cannot be null or empty.", nameof(name));
+
             Name = name;
             Age = age;
-        }     
-           public void PrintDetails()
+        }
+
+        // Method to display the person's details
+        public void PrintDetails()
         {
             Console.WriteLine($"Name: {Name}, Age: {Age}");
         }
@@ -62,21 +70,29 @@ namespace ObjectOrientedProgramming
         public static void Mainpersona(string[] args)
         {
             Console.Write("Enter the person's name: ");
-            string name = Console.ReadLine();
+            string? inputName = Console.ReadLine();
+            string name = inputName ?? "Unknown"; // "Unknown" if null
 
             Console.Write("Enter the person's age: ");
             int age;
-
             while (!int.TryParse(Console.ReadLine(), out age) || age < 0)
             {
-                Console.WriteLine("Invalid age. Please enter a positive integer.");
+                Console.WriteLine("Invalid age. Please enter a valid positive integer.");
             }
 
-            Person person = new Person(name, age);
+            //  Person object
+            try
+            {
+                Person person = new Person(name, age);
 
-            
-            Console.WriteLine("\nPerson Details:");
-            person.PrintDetails();
+                // Print the person's details
+                Console.WriteLine("\nPerson Details:");
+                person.PrintDetails();
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
         }
     }
 }
