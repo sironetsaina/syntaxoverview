@@ -120,12 +120,30 @@ class Program
                 Console.WriteLine("\nlists persons details");
                 Persondetails.Mainpersona(new string []{});
                 break;
+
+                case "bookdetails":
+                Console.WriteLine("\nLiblary");
+                BookProgram.MainBook(new string []{});
+                break;
+
+                 case "constructors":
+                Console.WriteLine("\nconstructors and deconstructors");
+                ConstructorProgram.Mainconstructor(new string []{});
+                break;
+                 case "properties":
+                Console.WriteLine("\nproperties");
+                Grades.Maingrades(new string []{});
+                break;
+                 case "fields":
+                Console.WriteLine("\nfields");
+                AreaProgram.Mainarea(new string []{});
+                break;
+
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
                 Console.WriteLine("Usage: dotnet run <simplecalc | syntax | Comparisonoperators>");
                 break;
         }
     }
-
 
 }
