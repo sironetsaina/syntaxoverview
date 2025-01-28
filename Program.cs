@@ -138,6 +138,17 @@ class Program
                 Console.WriteLine("\nfields");
                 AreaProgram.Mainarea(new string []{});
                 break;
+                case "bank":
+                Console.WriteLine("\nencapsulation");
+                BankProgram.MainBank(new string []{});
+                break;
+
+                case "employee":
+                Console.WriteLine("\nencapsulation");
+                employeeProgram.Mainemployee(new string []{});
+                break;
+
+
 
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
@@ -145,5 +156,8 @@ class Program
                 break;
         }
     }
+
+
+
 
 }
