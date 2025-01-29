@@ -54,13 +54,12 @@ class MyClass
         Console.WriteLine("Constructor called!");
     }
 
-    // Destructor (Finalizer)
+    // Destructor 
     ~MyClass()
     {
         Console.WriteLine("Destructor called!");
     }
 
-    // A simple method
     public void SayHello()
     {
         Console.WriteLine("Hello from MyClass!");
@@ -71,16 +70,14 @@ class ConstructorProgram
 {
    public static void Mainconstructor(string[] args)
     {
-        // Instantiate an object of MyClass
         MyClass? obj = new MyClass();
 
         // Call a method
         obj.SayHello();
 
-        // Explicitly set the object to null and force garbage collection
         obj = null;
-        GC.Collect(); // Force garbage collection to demonstrate the destructor
-        GC.WaitForPendingFinalizers(); // Wait for finalizers to complete
+        GC.Collect(); 
+        GC.WaitForPendingFinalizers(); 
 
         Console.WriteLine("End of Main method.");
     }

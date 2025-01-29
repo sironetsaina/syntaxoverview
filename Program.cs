@@ -147,8 +147,22 @@ class Program
                 Console.WriteLine("\nencapsulation");
                 employeeProgram.Mainemployee(new string []{});
                 break;
-
-
+                 case "sounds":
+                Console.WriteLine("\ninheritance");
+                Animalsound.Mainsound(new string []{});
+                break;
+                 case "vehicles":
+                Console.WriteLine("\ninheritance");
+                Vehicledetails.Mainvehicles(new string []{});
+                break;
+                  case "shapes":
+                Console.WriteLine("\ninheritance");
+                Shapes.Mainshapes(new string []{});
+                break;
+                  case "appliance":
+                Console.WriteLine("\nabstraction");
+                Appliances.Mainappliance(new string []{});
+                break;
 
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
@@ -156,8 +170,4 @@ class Program
                 break;
         }
     }
-
-
-
-
 }
