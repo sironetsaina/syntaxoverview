@@ -22,17 +22,14 @@ class Animalsound
 {
     public static void Mainsound(string[] args)
     {
-        // Base class object
+        
         Animal animal = new Animal();
-        animal.Speak(); // Calls the base class method
+        animal.Speak();
 
-        // Derived class object using base class reference (polymorphism)
         Animal dogAsAnimal = new Dog();
-        dogAsAnimal.Speak(); // Calls the overridden method in Dog
-
-        // Derived class object directly
+        dogAsAnimal.Speak(); 
         Dog dog = new Dog();
-        dog.Speak(); // Calls the overridden method in Dog
+        dog.Speak(); 
     }
 }
 public class Vehicle
