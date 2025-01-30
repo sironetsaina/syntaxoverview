@@ -8,6 +8,8 @@ using Methods;
 using Methods.FactorialCalculator;
 using ObjectOrientedProgramming;
 using ExceptionHandling;
+
+using ErrorHandling;
 class Program
 {
     static void Main(string[] args)
@@ -201,6 +203,16 @@ class Program
                Console.WriteLine("\nDivision Calculator");
               AgeValidator.MainAgechecker(new string []{});
                 break;
+/*Try and Catch block*/ case "nochecker":
+               Console.WriteLine("\nValid no checker");
+              NumberValidator.CheckNo(new string []{});
+                break;
+/*Try and catch block*/ case "filechecker":
+               Console.WriteLine("\nfile checker");
+              Filechecker.ReadFile(new string []{});
+                break;
+
+
 
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
