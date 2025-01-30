@@ -47,7 +47,7 @@ namespace ErrorHandling
                 Console.WriteLine("File content:");
                 Console.WriteLine(fileContent);
             }
-            catch (FileNotFoundException ex)
+            catch (FileNotFoundException )
             {
                 // Handle  when the file does not exist
                 Console.WriteLine($"Error: The file '{filePath}' does not exist. Please check the file path.");
