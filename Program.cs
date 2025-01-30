@@ -7,6 +7,7 @@ using Method;
 using Methods;
 using Methods.FactorialCalculator;
 using ObjectOrientedProgramming;
+using ExceptionHandling;
 class Program
 {
     static void Main(string[] args)
@@ -192,7 +193,14 @@ class Program
                 ProductPriceDisplay.ShowPrices (new string []{});
                 break;
 
-
+/*Exceptionhandling*/ case "errorcatchin":
+               Console.WriteLine("\nDivision Calculator");
+              DivisionCalculator.StartDivision (new string []{});
+                break;
+/*Exceptionhandling*/ case "customerror":
+               Console.WriteLine("\nDivision Calculator");
+              AgeValidator.MainAgechecker(new string []{});
+                break;
 
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
