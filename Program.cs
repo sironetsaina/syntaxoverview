@@ -212,7 +212,14 @@ class Program
               Filechecker.ReadFile(new string []{});
                 break;
 
-
+/*Try and catch finslly block*/ case "filereader":
+               Console.WriteLine("\nfile checker");
+              Filereader.ReadFileData(new string []{});
+                break;
+/*Try and catch finally block*/ case "nodivision":
+               Console.WriteLine("\ndivision calc");
+              Divideno.Numbersdiv(new string []{});
+                break;     
 
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");
