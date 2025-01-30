@@ -22,147 +22,177 @@ class Program
         
         switch (args[0].ToLower())
         {
-            case "simplecalc":
+/*arithmetic.cs*/ case "simplecalc":
                 Console.WriteLine("Running Simple Calculator:");
                 Calc.Simplecalc(new string[] { });
                 break;
 
-            case "syntax":
+ /*syntaxover */  case "syntax":
                 Console.WriteLine("\nRunning Variable Demonstration:");
                 Variable.VarRun(new string[] { });
                 break;
 
-            case "compare":
+/*CompOperators*/ case "compare":
                 Console.WriteLine("\nRunning a comparison of 2 numbers:");
                 Compareoperations.Compare(new string[] { }); // Runs Compare method in the Compareoperations class
                 break;
-                 case "checknumberrange":
+/*LogicalOperators*/ case "checknumberrange":
                 Console.WriteLine("\nChecking if inputed number lies within the 10 and 100:");
                 NumberRange.Checknumberrange(new string[] { }); 
                 break;
-                  case "checkage":
+ /*LogicalOperators*/ case "checkage":
                 Console.WriteLine("\nChecking if inputed number lies within the 10 and 100:");
                 Checkage.Checkvotingage(new string[] { }); 
                 break;
-                case "operations":
+ /*assignmentOperator*/ case "operations":
                 Console.WriteLine("\nassignment operations:");
                  Assignment.Operationassignment(new string[] { }); 
                 break;
 
-                case "swapp":
+/*assignmentOperator*/   case "swapp":
                 Console.WriteLine("\nassignment operations:");
                  Swapp.Swapnumbers(new string[] { }); 
                 break;
-                 case "ifstatements":
+/*IfElsestatements*/case "ifstatements":
                 Console.WriteLine("\nfind value of the no:");
                 Ifstatement.Ifelse(new string[] { }); 
                 break;
-                  case "ifstatement":
+ /*IfElsestatements*/case "ifstatement":
                 Console.WriteLine("\ncheck leap year:");
                 Leapyear.Leap(new string[] { }); 
                 break;
-                 case "switchstatement":
+/*Switchstatements*/ case "switchstatement":
                 Console.WriteLine("\nFind Day of the week:");
                 Switch.Days(new string[] { }); 
                 break;
-                 case "switchstatements":
+/*Switchstatements*/case "switchstatements":
                 Console.WriteLine("\nFind Month:");
                 Switchmonth.Month(new string[] { }); 
                 break;
-                 case "loops":
+/*Loops*/       case "loops":
                 Console.WriteLine("\nDisplay fizzbuzz:");
                 Loops.Loopno(new string[] { }); 
                 break;
-                case "fibonacci":
+ /*Loops*/      case "fibonacci":
                 Console.WriteLine("\nThe fibonacci sequence");
                 Fibonacci.Sequence(new string[] { }); 
                 break;
-                case "method":
+/*Methods and functions*/ case "method":
                 Console.WriteLine("\nusing main method to call results");
                 Add.Sum(new string[] { }); 
                 break;
-                case "methodstring":
+/*Methods and functions*/ case "methodstring":
                 Console.WriteLine("\nusing main method to call length of a string");
                 Getlength.Mainlength(new string [] { });
                 break;
-                case "methodoverloading":
+ /*Methodoverloading*/case "methodoverloading":
                 Console.WriteLine("\nusing  method overloading");
                 Summint.Mainadd(new string [] { });
                 break;
 
-                case "area":
+/*Methodoverloading*/ case "area":
                 Console.WriteLine("\nusing  method overloading to get area of shapes");
                 ShapesArea.Mainarea(new string [] { });
                 break;
 
-                 case "string":
+ /*Methodparameters*/ case "string":
                 Console.WriteLine("\nstring parameters");
                 StringRepeater.Mainstring(new string [] { });
                 break;
-                case "recarea":
+ /*Methodparameters*/  case "recarea":
                 Console.WriteLine("\nRectangle area");
                 Recarea.Mainarea(new string [] { });
                 break;
-                case "message":
+/* CallingMethods*/  case "message":
                 Console.WriteLine("\nmessage from the method");
                 Message.Mainmessage(new string [] { });
                 break;
-                case "factor":
+/* CallingMethods*/  case "factor":
                 Console.WriteLine("\n Get factorial");
                 Factorialcalc.Mainfactor(new string []{});
                 break;
-                  case "cars":
+/*Classesandobjects*/  case "cars":
                 Console.WriteLine("\nlist of car specifics ");
                Cardetails.Maindetails(new string []{});
                 break;
 
-                case "persondetails":
+/*Classesandobjects*/case "persondetails":
                 Console.WriteLine("\nlists persons details");
                 Persondetails.Mainpersona(new string []{});
                 break;
 
-                case "bookdetails":
+/*Constructorsanddeconstructors*/  case "bookdetails":
                 Console.WriteLine("\nLiblary");
                 BookProgram.MainBook(new string []{});
                 break;
 
-                 case "constructors":
+/*Constructorsanddeconstructors*/ case "constructors":
                 Console.WriteLine("\nconstructors and deconstructors");
                 ConstructorProgram.Mainconstructor(new string []{});
                 break;
-                 case "properties":
+/*Properties and fields*/ case "properties":
                 Console.WriteLine("\nproperties");
                 Grades.Maingrades(new string []{});
                 break;
-                 case "fields":
+/*Properties and fields*/  case "fields":
                 Console.WriteLine("\nfields");
                 AreaProgram.Mainarea(new string []{});
                 break;
-                case "bank":
+/*encapsulation*/  case "bank":
                 Console.WriteLine("\nencapsulation");
                 BankProgram.MainBank(new string []{});
                 break;
 
-                case "employee":
+ /*encapsulation*/ case "employee":
                 Console.WriteLine("\nencapsulation");
                 employeeProgram.Mainemployee(new string []{});
                 break;
-                 case "sounds":
+ /*inheritance*/ case "sounds":
                 Console.WriteLine("\ninheritance");
                 Animalsound.Mainsound(new string []{});
                 break;
-                 case "vehicles":
+/*inheritance*/case "vehicles":
                 Console.WriteLine("\ninheritance");
                 Vehicledetails.Mainvehicles(new string []{});
                 break;
-                  case "shapes":
-                Console.WriteLine("\ninheritance");
+/*Polymorhism*/  case "shapes":
+                Console.WriteLine("\nPolymorphism");
                 Shapes.Mainshapes(new string []{});
                 break;
-                  case "appliance":
+ /*Abstraction*/ case "appliance":
                 Console.WriteLine("\nabstraction");
                 Appliances.Mainappliance(new string []{});
                 break;
+/*Array and Lists*/  case "array":
+                Console.WriteLine("\narray of numbers");
+                Numbers.Mainnumbers(new string []{});
+                break;
+/*Array and Lists*/ case "lists":
+                Console.WriteLine("\nlist of numbers");
+                Listno.MainNo(new string []{});
+                break;
+/*dictionary*/   case "dictionary":
+                Console.WriteLine("\nstudent details");
+                DictionaryProgram.Maindictionary(new string []{});
+                break;
+/*Abstraction*/case "salary":
+                Console.WriteLine("\nemployee salary ");
+                Employeessalary.Mainsalary (new string []{});
+                break;
+/*dictionary*/ case "frequency":
+                Console.WriteLine("\nnumbers frequency");
+                Numbersfrequency.Mainfrequency (new string []{});
+                break;
+/*itreatingcollection*/case "colors":
+                Console.WriteLine("\ncolors");
+                Displaycolors.Maincolors (new string []{});
+                break;
+/*itreatingcollection*/ case "iteratingprices":
+                Console.WriteLine("\nProduct prices display");
+                ProductPriceDisplay.ShowPrices (new string []{});
+                break;
+
+
 
             default:
                 Console.WriteLine("Invalid argument. Use 'simplecalc' or 'syntax' or 'compare'");

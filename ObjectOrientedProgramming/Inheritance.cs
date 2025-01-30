@@ -3,7 +3,7 @@ namespace ObjectOrientedProgramming{
 // Base class
 class Animal
 {
-    public virtual void Speak()
+    public virtual void Speak() // vitual means that it can be overriden in a derived class;
     {
         Console.WriteLine("The animal makes a sound.");
     }
@@ -23,7 +23,7 @@ class Animalsound
     public static void Mainsound(string[] args)
     {
         
-        Animal animal = new Animal();
+        Animal animal = new Animal(); //animal object is created
         animal.Speak();
 
         Animal dogAsAnimal = new Dog();
@@ -32,7 +32,7 @@ class Animalsound
         dog.Speak(); 
     }
 }
-public class Vehicle
+public class Vehicle // base class
 {
     public string Model { get; set; } 
         public string Make { get; set; }  

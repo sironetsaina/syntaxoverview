@@ -56,7 +56,7 @@ class BankAccount
 
 class BankProgram
 {
-    public static void MainBank(string[] args)
+    public static void MainBank(string[] args) // program entry point 
     {
         // Create a BankAccount object
         BankAccount account = new BankAccount(1000);
